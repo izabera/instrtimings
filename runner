@@ -1,0 +1,8 @@
+#!/bin/bash
+
+(($#)) || set {0..6}
+
+for i do
+  gcc -Dinstrnum=$i loop.c
+  timeout 5s ./a.out
+done
