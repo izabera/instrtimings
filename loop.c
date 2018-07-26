@@ -22,8 +22,8 @@
 #define instr2 "cld"
 #define instr3 "stc"
 #define instr4 "clc"
-#define instr5 "inc %eax"
-#define instr6 "lea 4(%eax),%eax\n" "lea 4(%ebx),%ebx"
+#define instr5 "cmc"
+#define instr6 "inc %eax"
 #define instr(n) instr_(n)
 #define instr_(n) instr##n
 

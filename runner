@@ -3,6 +3,6 @@
 (($#)) || set {0..6}
 
 for i do
-  gcc -Dinstrnum=$i loop.c
-  timeout 5s ./a.out
+  gcc -Dinstrnum=$i loop.c -o loop$i -g
+  timeout 5s ./loop$i
 done
